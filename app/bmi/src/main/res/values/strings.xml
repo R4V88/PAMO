@@ -1,6 +1,24 @@
 <resources>
-    <string name="app_name">BMI</string>
+    <string name="app_name">Be Healthy</string>
+
+    <!--common-->
+    <string name="main_menu">Main</string>
+
+    <!--main menu-->
+    <string name="bmi_calculator">BMI calculator</string>
+    <string name="calories_calculator">Calories calculator</string>
+    <string name="get_receip">Food Recommendation</string>
+
+    <!--bmi calculator-->
     <string name="weight_amount">Enter Weight</string>
     <string name="height_amount">Enter Height</string>
     <string name="calculated_bmi">Calculated BMI:</string>
+
+    <!--calories calculator-->
+    <string name="female_btn">Female</string>
+    <string name="male_btn">Male</string>
+    <string name="calculate_calories_btn">Calculate</string>
+    <string name="weight_hint">Your Weight (Kilograms)</string>
+    <string name="height_hint">Your Height (Meters)</string>
+    <string name="age_hint">Your Age (Years)</string>
 </resources>

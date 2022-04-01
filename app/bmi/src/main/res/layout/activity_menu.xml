@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_all"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/bmiCalculatorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/bmi_calculator"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesCalculator"
+        app:layout_constraintStart_toStartOf="@+id/caloriesCalculator" />
+
+    <Button
+        android:id="@+id/caloriesCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="233dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/calories_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getReceip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/get_receip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesCalculator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

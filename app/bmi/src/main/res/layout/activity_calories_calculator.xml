@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_all"
+    tools:context=".CaloriesCalculatorActivity">
+
+    <Button
+        android:id="@+id/chooseFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/female_btn"
+        app:layout_constraintBottom_toTopOf="@+id/inputWeightLayout"
+        app:layout_constraintEnd_toStartOf="@+id/chooseMale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chooseMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/male_btn"
+        app:layout_constraintBottom_toTopOf="@+id/inputWeightLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/chooseFemale"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputWeightLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="60dp"
+        android:rotationX="360"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:boxBackgroundColor="@color/text_fields"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputHeightLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputWeightView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight_hint"
+            android:inputType="number"
+            android:rotationX="360"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputHeightLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="60dp"
+        android:rotationX="360"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:boxBackgroundColor="@color/text_fields"
+        app:hintTextColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputAgeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeightLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputHeightView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height_hint"
+            android:inputType="number"
+            android:rotationX="360"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAgeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="60dp"
+        android:baselineAligned="false"
+        android:rotationX="360"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:boxBackgroundColor="@color/text_fields"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputHeightLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputAgeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/age_hint"
+            android:inputType="number"
+            android:rotationX="360"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculateCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/calculate_calories_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAgeLayout" />
+
+    <TextView
+        android:id="@+id/showResult"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/text_fields"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAgeLayout" />
+
+    <Button
+        android:id="@+id/returnToMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/main_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

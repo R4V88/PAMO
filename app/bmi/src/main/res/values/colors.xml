@@ -12,4 +12,10 @@
     <color name="colorAccent">#ff9100</color>
     <color name="amount_background">#BBDEFB</color>
     <color name="result_background">#FFE0B2</color>
+
+    <color name="backgroud_all">#FAEDCA</color>
+    <color name="hearth_color">#CE796B</color>
+    <color name="main_font">#708D81</color>
+    <color name="button_color">#1F271B</color>
+    <color name="text_fields">#353B3C</color>
 </resources>
