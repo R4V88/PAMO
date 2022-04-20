@@ -13,17 +13,17 @@ import androidx.appcompat.app.AppCompatActivity;
  * @author Rafał Sochacki s20047
  */
 public class MenuActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Button goBmiBtn, goCaloriesBtn, goReceip;
+        Button goBmiBtn, goCaloriesBtn, goReceip, goQuiz;
 
         goBmiBtn = findViewById(R.id.bmiCalculatorButton);
         goCaloriesBtn = findViewById(R.id.caloriesCalculator);
         goReceip = findViewById(R.id.getReceip);
+        goQuiz = findViewById(R.id.goQuiz);
 
         goBmiBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +45,13 @@ public class MenuActivity extends AppCompatActivity {
                 launchGetReceip();
             }
         });
+
+        goQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchQuiz();
+            }
+        });
     }
 
     private void launchBmiCalculator() {
@@ -59,6 +66,11 @@ public class MenuActivity extends AppCompatActivity {
 
     private void launchGetReceip() {
         Intent intent = new Intent(this, ReceipActivity.class);
+        startActivity(intent);
+    }
+
+    private void launchQuiz() {
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
 }

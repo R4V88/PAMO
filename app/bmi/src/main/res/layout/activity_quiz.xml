@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonAnswer4"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="31dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/answer_4"
+        app:layout_constraintStart_toEndOf="@+id/buttonAnswer3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer2" />
+
+    <Button
+        android:id="@+id/buttonAnswer2"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/answer_2"
+        app:layout_constraintStart_toEndOf="@+id/buttonAnswer1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionCounterText" />
+
+    <TextView
+        android:id="@+id/textViewQuestionCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/x_of_y"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestionCounterText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrentQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/test_question"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionCounterValue" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="110dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionCounterText" />
+
+    <Button
+        android:id="@+id/buttonAnswer1"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/answer_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionCounterText" />
+
+    <Button
+        android:id="@+id/buttonAnswer3"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/answer_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer1" />
+
+    <TextView
+        android:id="@+id/textViewCurrentScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/_00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuestionCounterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/quiz_question_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/score_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCurrentScoreValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRestartQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/restart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer4" />
+
+    <Button
+        android:id="@+id/backToMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/hearth_color"
+        android:text="@string/main_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestartQuiz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
