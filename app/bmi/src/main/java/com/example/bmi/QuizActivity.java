@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class QuizActivity extends AppCompatActivity {
     private int currentQuestionIndex = 1;
-    private int questionCount = 0;
+    private int questionCounter = 0;
     private int currentScore = 0;
 
     private TextView textViewCurrentQuestion, textViewResult, textViewCurrentScoreValue,
@@ -66,7 +66,7 @@ public class QuizActivity extends AppCompatActivity {
 
         loadQuestions();
 
-        questionCount = questions.size();
+        questionCounter = questions.size();
 
         restartQuiz();
 
@@ -77,7 +77,7 @@ public class QuizActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             try {
-                if (currentQuestionIndex > questionCount) {
+                if (currentQuestionIndex > questionCounter) {
                     return;
                 }
 
@@ -101,7 +101,7 @@ public class QuizActivity extends AppCompatActivity {
                 updateScore();
                 currentQuestionIndex++;
 
-                if (currentQuestionIndex > questionCount) {
+                if (currentQuestionIndex > questionCounter) {
                     textViewCurrentQuestion.setText(getString(R.string.end));
                     buttonAnswer1.setVisibility(View.INVISIBLE);
                     buttonAnswer2.setVisibility(View.INVISIBLE);
@@ -164,7 +164,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateQuestion() {
-        textViewQuestionCounterValue.setText(String.valueOf(currentQuestionIndex).concat("/").concat(String.valueOf(questionCount)));
+        textViewQuestionCounterValue.setText(String.valueOf(currentQuestionIndex).concat("/").concat(String.valueOf(questionCounter)));
         updateScore();
 
         Question currentQuestion = questions.get(currentQuestionIndex - 1);

@@ -84,4 +84,8 @@
 
     <string name="quiz_error">#ERROR</string>
     <string name="quiz_problem">PROBLEM</string>
+
+    <!--  BMI Charts  -->
+    <string name="add_bmi_data">test</string>
+    <string name="add_data_to_chart">Add</string>
 </resources>

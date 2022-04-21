@@ -1,9 +1,9 @@
 package com.example.bmi;
 
 public class Question {
-    private String question = "";
-    private String[] answers;
-    private int correctAnswer = -1;
+    String question = "";
+    String[] answers;
+    int correctAnswer = -1;
 
     public Question(String question, String[] answers, int correctAnswer) {
         this.question = question;
